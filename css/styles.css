@@ -90,6 +90,14 @@
     scroll-behavior: smooth;
   }
 }
+.blinking-arrow {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
 
 body {
   margin: 0;
