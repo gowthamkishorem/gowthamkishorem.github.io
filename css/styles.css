@@ -91,13 +91,13 @@
   }
 }
 .blinking-arrow {
-  animation: blink 0.5s infinite;
+  animation: blink 0.7s steps(2, start) infinite;
 }
 
 @keyframes blink {
-  0%, 50%, 100% { opacity: 1; }
-  25%, 75% { opacity: 0; }
+  to { visibility: hidden; }
 }
+
 
 body {
   margin: 0;
